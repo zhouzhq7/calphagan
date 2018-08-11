@@ -358,6 +358,7 @@ def train():
 
             if ( (n_iter + 1) % (num_of_iter_one_epoch * save_every_epoch) == 0):
                 # quick evaluation on train set
+                t_label_test = np.zeros((batch_sz, y_dim))
                 out = sess.run(net_g_test.outputs,
                                {t_image: test_images})
                 out = (out+1)*127.5
