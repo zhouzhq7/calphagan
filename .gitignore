@@ -1,2 +1,4 @@
-/train
-/train_class
+__pycache__/
+train/
+train_class/
+.idea/

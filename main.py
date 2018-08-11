@@ -95,6 +95,11 @@ def train():
     np.random.seed(42)
     sampled_z_test = np.random.normal(0.0, 1.0, [64, z_dim])
 
+    targets = []
+    for i in range(64):
+        targets.append(i//8)
+    sampled_y_test = np.eye(y_dim)[targets]
+
     "auto encoder loss"
     reconstruction_loss = recons_loss_w*tf.reduce_mean(tf.losses.absolute_difference(
         x_recons, (t_image/127.5)-1
@@ -362,7 +367,7 @@ def train():
                                    '/train_%d.png' % ((n_iter + 1) // num_of_iter_one_epoch))
 
                 # quick evaluation on generative performance of generator
-                out1 = sess.run(net_g_test1.outputs, feed_dict={t_z: sampled_z_test})
+                out1 = sess.run(net_g_test1.outputs, feed_dict={t_z: sampled_z_test, t_label:sampled_y_test})
                 out1 = (out1+1)*127.5
                 print ("generated image:", out1.shape, out1.min(), out1.max())
                 print("[*] save images")
