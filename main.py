@@ -360,7 +360,7 @@ def train():
                 # quick evaluation on train set
                 t_label_test = np.zeros((batch_sz, y_dim))
                 out = sess.run(net_g_test.outputs,
-                               {t_image: test_images})
+                               {t_image: test_images, t_label: t_label_test})
                 out = (out+1)*127.5
                 print ("reconstructed image:", out.shape, out.min(), out.max())
                 print("[*] save images")
