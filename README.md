@@ -89,6 +89,6 @@ python main.py --mode=gen
 
 ### Test on random constructed dataset
 <div align="center">
-	<img src="imgs/results-otherdataset.png" width="45%" height="30%"/>
+	<img src="imgs/results-otherdataset.png" width="40%" height="30%"/>
 </div>
 </a>
