@@ -463,11 +463,11 @@ def encode():
 
 if __name__== "__main__":
 
+    parser.add_argument('--mode', type=str, default='train', help='srgan, evaluate')
+
     args = parser.parse_args()
 
     tl.global_flag['mode'] = args.mode
-
-    args.mode = 'train'
 
     if args.mode == 'train':
         train()
