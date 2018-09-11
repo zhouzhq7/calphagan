@@ -6,3 +6,26 @@ alpha-GAN: [Variational Approaches for Auto-Encoding Generative Adversarial Netw
 
 conditional GAN: [Conditional Generative Adversarial Nets](https://arxiv.org/abs/1411.1784)
 
+## Network Architecture
+### Encoder
+<div align="center">
+	<img src="imgs/encoder.png" width="80%" height="30%"/>
+</div>
+</a>
+
+### Code Discriminator
+<div align="center">
+	<img src="imgs/codediscriminator.png" width="40%" height="30%"/>
+</div>
+</a>
+
+### Generator
+<div align="center">
+	<img src="imgs/generator.png" width="80%" height="30%"/>
+</div>
+</a>
+### Discriminator
+<div align="center">
+	<img src="imgs/discriminator.png" width="80%" height="30%"/>
+</div>
+</a>
