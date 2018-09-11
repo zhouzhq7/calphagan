@@ -82,3 +82,13 @@ python main.py --mode=gen
 
 ## Results
 ### Test on CIFAR-10
+<div align="center">
+	<img src="imgs/results-cifar10.png" width="30%" height="30%"/>
+</div>
+</a>
+
+### Test on random constructed dataset
+<div align="center">
+	<img src="imgs/results-otherdataset.png" width="40%" height="30%"/>
+</div>
+</a>
