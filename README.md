@@ -86,8 +86,9 @@ python main.py --mode=gen
 	<img src="imgs/results-cifar10.png" width="30%" height="30%"/>
 </div>
 </a>
+
 ### Test on random constructed dataset
 <div align="center">
-	<img src="imgs/results-otherdataset.png" width="30%" height="30%"/>
+	<img src="imgs/results-otherdataset.png" width="45%" height="30%"/>
 </div>
 </a>
