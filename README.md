@@ -79,3 +79,6 @@ To run this mode, you can simply use the following command on terminal.
 ```bash
 python main.py --mode=gen
 ```
+
+## Results
+### Test on CIFAR-10
