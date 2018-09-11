@@ -71,5 +71,11 @@ python main.py --mode=encode
 ```
 
 ### Generate
-The generate mode uses well-trained generator to generate the reconstructed images from given predicted features and labels.
-
+The generate mode uses well-trained generator to generate the reconstructed images from given predicted features and labels, which is stored in following path
+```bash
+'./results/encoded_feat.pkl'
+```
+To run this mode, you can simply use the following command on terminal.
+```bash
+python main.py --mode=gen
+```
